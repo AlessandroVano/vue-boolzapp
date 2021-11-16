@@ -50,8 +50,12 @@ span {
 
 /* sezioni interne sidebar */
  
+
+/* sezione profile */
+
+
 .profile {
-     background: rgb(231, 231, 231);
+     background: rgb(247, 244, 244);
        display: flex;   
      flex-wrap: wrap; 
      justify-content: space-between;
@@ -88,9 +92,7 @@ span {
     color: gray;
 } 
 
-
-
-
+/* sezione notifications */
 
 .notifications {
     background: rgb(183, 208, 255);
@@ -111,42 +113,42 @@ span {
     padding: 7px 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* sezione research-chat */
 
 .research-chat{
-    height:9%;
-    background-color: rgb(231, 231, 231) ;
+    display: flex;
+    background-color: rgb(247, 244, 244) ;
+    padding: 10px;
 }
 
+.fa-search{
+    color: gray
+}
+
+.search-icon {
+    padding: 6px 30px;
+    background: white;
+}
+
+.research-chat input {
+    flex-grow: 1 ;
+    height: 28px;
+    border: 1px;
+  /*   border-left: 1px gray; */
+    outline: none;
+    
+}
+
+
+
+
+/* sezione contatti */
 .contacts{
     height: 100%;
     background: rgb(255, 255, 255);
 }
+
+
 
 
 /* sezione messaggi */
