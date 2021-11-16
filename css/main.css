@@ -31,23 +31,58 @@ body {
     overflow: hidden;
 }
 
-main{display: flex;}
+
 
 .sidebar {
-     
     width: 35%;
-    flex-direction: column;
-     background: coral; 
     display: flex;
+    flex-direction: column;
 }
 
 /* sezioni interne sidebar */
-
+ 
 .profile {
-    
-    height: 12%;
-    background: rgb(231, 231, 231);
+     background: rgb(231, 231, 231);
+       display: flex;   
+     flex-wrap: wrap; 
+     justify-content: space-between;
+     padding: 5px;
+     
+ 
 }
+
+.profile img{
+    max-width: 67px;
+    padding: 6px 6px;
+    border-radius: 32px;
+}
+
+
+ .img-h4{
+     display: flex; 
+} 
+ 
+ .nome-utente{
+     margin-top: 15%; 
+   
+}   
+
+
+.icon-profile {
+    margin-top: 6%;
+    
+    
+}
+
+ .icon-a, .icon-b, .icon-c {
+    padding: 5px;
+    color: gray;
+} 
+
+
+
+
+
 .notifications {
    
     height: 15%;
