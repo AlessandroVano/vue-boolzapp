@@ -18,6 +18,7 @@ body {
        display: flex;
        justify-content: center;
        align-items: center;
+       overflow: hidden;
 }
 
 
@@ -26,4 +27,65 @@ body {
     min-width: 900px;
     height: 92%;
     background: white;
+    display: flex;
+    overflow: hidden;
 }
+
+main{display: flex;}
+
+.sidebar {
+     
+    width: 35%;
+    flex-direction: column;
+     background: coral; 
+    display: flex;
+}
+
+/* sezioni interne sidebar */
+
+.profile {
+    
+    height: 12%;
+    background: rgb(231, 231, 231);
+}
+.notifications {
+   
+    height: 15%;
+    background: rgb(147, 178, 236);
+}
+.research-chat{
+    height:9%;
+    background-color: rgb(231, 231, 231) ;
+}
+
+.contacts{
+    height: 100%;
+    background: rgb(255, 255, 255);
+}
+
+
+/* sezione messaggi */
+
+ .box-container {
+    
+    width: 65%;
+    flex-direction: column;
+     background: coral; 
+    display: flex;
+} 
+
+.user-active {
+    height: 9%;
+    background: rgb(214, 213, 213);
+}
+
+
+.chat {
+    height: 82%;
+    background-image: url(../img/mine.jpg);
+}
+.insert-message{
+    height: 9%;
+    background-color: rgb(214, 213, 213) ;
+}
+
