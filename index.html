@@ -17,11 +17,16 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
+
+
+
     <!-- contenitore centrale -->
     <div id="app" class="container">
         
        
+        <!-- SEZIONE SIDEBAR -->
         <section class="sidebar">
+            <!-- sezione interna sidebar (profile) -->
             <div class="profile">
                 <div class="img-h4">
                     <img src="./img/avatar_io.jpg" alt="avatar_io">
@@ -45,6 +50,7 @@
                
 
             </div>
+             <!-- sezione interna sidebar (notifications) -->
             <div class="notifications">
                 <a class="notifications-icon" href="">
                     <i class="fas fa-bell-slash"></i>
@@ -55,14 +61,14 @@
                 </div>
                 
             </div>
-
+              <!-- sezione interna sidebar (research-chat) -->
             <div class="research-chat">
                 <a href="#">
                     <i  class="fas fa-search search-icon"></i>
                 </a>
                 <input type="text" placeholder="Cerca o inizia una nuova chat">
             </div>
-
+               <!-- sezione interna sidebar (contacts) -->
             <div class="contacts br">
                 <div class="img-h4 ">
                      <img src="./img/avatar_1.jpg" alt="avatar_1">
@@ -87,14 +93,8 @@
                      <h4 class="nome-utente1">Luisa</h4>
                 </div> 
             </div>
-            
-           
           </section>
-
-
-
-
-
+          <!-- SEZIONE BOX-CONTAINER -->
           <section class="box-container">
             <div class="user-active">
                 <div class="img-h4">
@@ -118,20 +118,24 @@
                     </a>
                 </div>
             </div>
+   <!-- sezione interna box-container (chat) -->
+            <div class="chat">
+               
+            </div>
+               <!-- sezione box-container (insert-message) -->
+            <div class="insert-message">
+                <a href="#">
+                    <i class="far fa-smile icon"></i>
+                </a>
+                   
+                    <input type="text" placeholder="Scrivi un messaggio">
 
-
-
-
-            <div class="chat"></div>
-            <div class="insert-message"></div>
+                    <a href="#">
+                        <i class="fas fa-microphone icon"></i>
+                    </a>
+                   
+            </div>
           </section>
-    
-       
-        
-
-      
-       
-         
     </div>
     <!-- JS -->
     <script src="./js/main.js"></script>

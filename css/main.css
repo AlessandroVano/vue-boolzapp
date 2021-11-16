@@ -55,7 +55,6 @@ span {
 
 /* sezione profile */
 
-
 .profile {
      background: rgb(233, 231, 231);
        display: flex;   
@@ -73,7 +72,6 @@ span {
     
 
 }
-
 
  .img-h4{
      display: flex; 
@@ -129,13 +127,13 @@ span {
     color: gray
 }
 
-.search-icon {
+ .search-icon {
     padding: 6px 30px;
     background: white;
 }
-
+ 
 .research-chat input {
-    flex-grow: 1 ;
+    flex-grow: 1 ; 
     height: 28px;
     border: 1px;
   /*   border-left: 1px gray; */
@@ -175,12 +173,11 @@ padding-left: 20px;
 
  .box-container {
     
-    width: 65%;
+     width: 65%;
     flex-direction: column;
-     background: coral; 
     display: flex;
 } 
-
+ /* sezione user-active */
 .user-active {
     background: rgb(233, 231, 231);
     display: flex;   
@@ -201,31 +198,31 @@ padding-left: 20px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .chat {
     height: 82%;
     background-image: url(../img/mine.jpg);
 }
+
+/* sezione insert-message */
 .insert-message{
-    height: 9%;
-    background-color: rgb(214, 213, 213) ;
+    display: flex;
+    background-color: rgb(247, 244, 244) ;
+    padding: 10px;
+}
+.insert-message input {
+    
+    flex-grow: 1;
+    height: 52px;
+     border: none; 
+ border-radius: 5px;
+    outline: none;
+    
+}
+
+
+.icon {
+    font-size: 22px;
+    padding: 15px 30px;
+    background: rgb(247, 244, 244);
 }
 
