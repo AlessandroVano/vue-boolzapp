@@ -19,6 +19,7 @@ body {
        justify-content: center;
        align-items: center;
        overflow: hidden;
+       
 }
 
 
@@ -29,6 +30,14 @@ body {
     background: white;
     display: flex;
     overflow: hidden;
+    
+}
+
+h4 {
+    font-size: 13px;
+}
+span {
+    font-size: 11px;
 }
 
 
@@ -84,10 +93,51 @@ body {
 
 
 .notifications {
-   
-    height: 15%;
-    background: rgb(147, 178, 236);
+    background: rgb(183, 208, 255);
+     display: flex; 
+    padding: 11px;
 }
+
+.notifications-icon{
+
+    padding: 17px 18px;
+    background: white;
+    border-radius: 32px;
+}
+.fa-bell-slash {
+    color: rgb(183, 208, 255) ;
+}
+.text {
+    padding: 7px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .research-chat{
     height:9%;
     background-color: rgb(231, 231, 231) ;
