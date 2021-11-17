@@ -69,8 +69,11 @@
                 <input type="text" placeholder="Cerca o inizia una nuova chat">
             </div>
                <!-- sezione interna sidebar (contacts) -->
-
-             <div v-for="contact in contacts" class="contacts br">
+             <div
+             class="contacts br"
+              v-for="(contact,index) in contacts"
+               :class="{active: index === activeContacts}"
+               @click="changeContacts(index)">
                 <div  class="img-h4 ">
                      <img :src="`./img/avatar${contact.avatar}.jpg`" :alt="contact.name">
                      <h4 class="nome-utente1"> {{contact.name}} </h4>
