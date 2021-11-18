@@ -86,7 +86,7 @@
           <section class="box-container">
             <div class="user-active">
                 <div class="img-h4">
-                    <img :src="`./img/avatar${contacts[activeContacts].avatar}.jpg`" alt="">
+                    <img :src="`./img/avatar${contacts[activeContacts].avatar}.jpg`" alt="`${contacts[activeContacts].name} avatar`">
                     <div class="text">
                         <h4> {{contacts[activeContacts].name}} </h4>
                     <span>Ultimo accesso alle ore 10:35</span>
@@ -107,13 +107,16 @@
                 </div>
             </div>
    <!-- sezione interna box-container (chat) -->
-            <div class="chat">
-                <div class="messsage-sent"> Messaggio inviato
-                    <span class="data-ora-message">10/01/2021 15:50:00</span>
+            <div
+             class="chat"
+             v-for="(message, index) in contacts[activeContacts].messages"
+             :class="message.status">
+                <div class="messsage-sent"  > {{message.text}}
+                    <span class="data-ora-message"> {{message.date}} </span>
                 </div>
-                <div class="message-received">Messaggio ricevuto
-                    <span class="data-ora-message">10/01/2021 15:50:00</span>
-                </div>
+                 <div class="message-received"> {{message.text}}
+                    <span class="data-ora-message"> {{message.date}} </span>
+                </div> 
             </div>
                <!-- sezione box-container (insert-message) -->
             <div class="insert-message">
