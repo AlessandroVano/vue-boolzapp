@@ -105,6 +105,7 @@ const app = new Vue({
         
         
         activeContacts: 0,
+        newMessage: "",
     },
 
     methods : {

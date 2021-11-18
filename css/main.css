@@ -205,38 +205,36 @@ padding-left: 20px;
 .chat {
     display: flex;
     flex-direction: column;
-    height: 82%;
+     height: 82%;  
     background-image: url(../img/mine.jpg);
 }
 
-.messsage-sent{
-    margin-right: 10%;
-    margin-top: 30px;
+
+.sent {
     align-self: flex-end;
     background-color:white;
-    height: 50px;
-    width: 300px;
-    padding: 12px;
-    border-radius: 12px;
-    display: flex;
-    flex-wrap: wrap;
+    margin-right: 10%; 
+     margin-top: 30px;  
+   padding: 8px;
+   border-radius: 12px;
 }
 
-.data-ora-message {
-    padding-left: 10rem;
-    
-}
-.message-received {
-    margin-left: 10%;
-    margin-top: 25px;
+.received {
     align-self: flex-start;
     background-color:rgb(68, 250, 129);
-    height: 50px;
-    width: 300px;
-    padding: 12px;
+    margin-left: 10%;
+     margin-top: 25px; 
+    padding: 8px;
     border-radius: 12px;
-    display: flex;
-    flex-wrap: wrap;
+}
+ .message {
+     display: flex;
+   flex-direction: column;
+ }
+.data-ora-message {
+    padding-left: 14rem;
+    padding-top: 0.3rem;
+    
 }
 /* sezione insert-message */
 .insert-message{
@@ -247,7 +245,7 @@ padding-left: 20px;
 .insert-message input {
     
     flex-grow: 1;
-    height: 52px;
+    /* height: 52px; */
      border: none; 
  border-radius: 5px;
     outline: none;

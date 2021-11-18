@@ -108,15 +108,17 @@
             </div>
    <!-- sezione interna box-container (chat) -->
             <div
-             class="chat"
-             v-for="(message, index) in contacts[activeContacts].messages"
-             :class="message.status">
-                <div class="messsage-sent"  > {{message.text}}
-                    <span class="data-ora-message"> {{message.date}} </span>
+             class="chat">
+                <div 
+                     class="message"
+                     v-for="message in contacts[activeContacts].messages"
+                     :class="message.status" 
+                      >   {{message.text}} 
+                    <span class="data-ora-message"> 
+                          {{message.date}} 
+                    </span>
                 </div>
-                 <div class="message-received"> {{message.text}}
-                    <span class="data-ora-message"> {{message.date}} </span>
-                </div> 
+               
             </div>
                <!-- sezione box-container (insert-message) -->
             <div class="insert-message">
@@ -124,7 +126,9 @@
                     <i class="far fa-smile icon"></i>
                 </a>
                    
-                    <input type="text" placeholder="Scrivi un messaggio">
+                    <input type="text"
+                     placeholder="Scrivi un messaggio"
+                     v-model="newMessage">
 
                     <a href="#">
                         <i class="fas fa-microphone icon"></i>
