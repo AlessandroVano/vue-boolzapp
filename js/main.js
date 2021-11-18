@@ -109,9 +109,25 @@ const app = new Vue({
     },
 
     methods : {
+        /* cambio utente  */
         changeContacts(index) {
             this.activeContacts = index ;
             console.log(index);
+        },
+          /* Inserimento del messaggio tramite input nella chat messaggi */
+        insertNewMessage() {
+            /* non inserisco tramite input nessun testo */
+            if(this.newMessage !== '') {
+               /* scalo all'interno del mio array (contacts > [con le quadre accedo ai mie elementi scalabili] ossia activeContacts > .messagges (accedo ai messaggi) > .push (aggiungo il messaggio )) */ 
+                this.contacts[this.activeContacts].messages.push({
+                    date: dayjs().format('DD/MM/YYYY hh:mm:ss'),
+                    /* vado a mettere la dicit */
+                        text: this.newMessage,
+                        status: 'sent'
+                });
+                /* pulizia imput dopo scrittura */
+                this.newMessage = '';
+            }
         },
     },
 });

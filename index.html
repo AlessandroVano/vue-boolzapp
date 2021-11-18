@@ -128,7 +128,8 @@
                    
                     <input type="text"
                      placeholder="Scrivi un messaggio"
-                     v-model="newMessage">
+                     v-model.trim="newMessage"
+                     @keyup.enter="insertNewMessage">
 
                     <a href="#">
                         <i class="fas fa-microphone icon"></i>
@@ -137,6 +138,9 @@
             </div>
           </section>
     </div>
+
+    <!-- Daj.js -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
     <!-- JS -->
     <script src="./js/main.js"></script>
 </body>
