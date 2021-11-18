@@ -127,7 +127,15 @@ const app = new Vue({
                 });
                 /* pulizia imput dopo scrittura */
                 this.newMessage = '';
-            }
+
+                setTimeout(() => {
+                    this.contacts[this.activeContacts].messages.push({
+                        date: dayjs().format('DD/MM/YYYY hh:mm:ss'),
+                            text: 'ok', 
+                            status: 'received',
+                    });
+                }, 1000);
+            };
         },
     },
 });

@@ -207,6 +207,8 @@ padding-left: 20px;
     flex-direction: column;
      height: 82%;  
     background-image: url(../img/mine.jpg);
+    overflow-y:auto;
+
 }
 
 
@@ -217,6 +219,7 @@ padding-left: 20px;
      margin-top: 30px;  
    padding: 8px;
    border-radius: 12px;
+
 }
 
 .received {
@@ -226,6 +229,7 @@ padding-left: 20px;
      margin-top: 25px; 
     padding: 8px;
     border-radius: 12px;
+    margin-bottom: 30px;
 }
  .message {
      display: flex;
@@ -238,6 +242,7 @@ padding-left: 20px;
 }
 /* sezione insert-message */
 .insert-message{
+    
     display: flex;
     background-color: rgb(247, 244, 244) ;
     padding: 10px;
